@@ -5,27 +5,27 @@
   "showAttachments": true,
   "hideUnresolved": false,
   "showOrphans": true,
-  "collapse-color-groups": true,
+  "collapse-color-groups": false,
   "colorGroups": [
     {
-      "query": "tag:#domain/pentesting",
+      "query": "tag:#type/moc  ",
       "color": {
         "a": 1,
-        "rgb": 14701138
+        "rgb": 16777215
       }
     },
     {
-      "query": "tag:#domain/hardware  ",
+      "query": "tag:#domain/pentesting  ",
       "color": {
         "a": 1,
-        "rgb": 14725458
+        "rgb": 16711680
       }
     },
     {
       "query": "tag:#domain/security  ",
       "color": {
         "a": 1,
-        "rgb": 11657298
+        "rgb": 167680
       }
     },
     {
@@ -36,10 +36,10 @@
       }
     },
     {
-      "query": "tag:#domain/networking  ",
+      "query": "tag:#domain/hardware",
       "color": {
         "a": 1,
-        "rgb": 5431473
+        "rgb": 9985307
       }
     },
     {
@@ -57,7 +57,7 @@
       }
     },
     {
-      "query": "path:Ressources  ",
+      "query": "path:Resources  ",
       "color": {
         "a": 1,
         "rgb": 4262364
@@ -74,14 +74,14 @@
       "query": "tag:#domain/homelab",
       "color": {
         "a": 1,
-        "rgb": 11730944
+        "rgb": 14205519
       }
     },
     {
-      "query": "tag:#resource/book  ",
+      "query": "tag:#domain/networking",
       "color": {
         "a": 1,
-        "rgb": 4786148
+        "rgb": 6288104
       }
     }
   ],
@@ -90,11 +90,11 @@
   "textFadeMultiplier": 0,
   "nodeSizeMultiplier": 0.996581769436997,
   "lineSizeMultiplier": 0.359452385745923,
-  "collapse-forces": false,
+  "collapse-forces": true,
   "centerStrength": 0.615672475424486,
   "repelStrength": 8.97117962466488,
   "linkStrength": 0.896919669820817,
   "linkDistance": 30,
-  "scale": 0.4334374648729189,
-  "close": false
+  "scale": 0.434678116053299,
+  "close": true
 }
