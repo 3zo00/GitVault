@@ -6,5 +6,17 @@ A time-series metrics collector: it periodically scrapes numeric metrics (CPU lo
 
 **Node Exporter** is the companion service that exposes host-level metrics (CPU, RAM, disk, network) for Prometheus to scrape, install it on every host you want visibility into.
 
+### Docker basics
+```yaml
+prometheus:
+  image: prom/prometheus
+  ports:
+    - "9090:9090"
+  volumes:
+    - ./prometheus.yml:/etc/prometheus/prometheus.yml
+    - prometheus_data:/prometheus
+  restart: unless-stopped
+```
+
 ### Related
 [[Monitoring]] [[Grafana]] [[Homelab Backups and Maintenance]]

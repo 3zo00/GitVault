@@ -6,5 +6,20 @@ Network-wide ad and tracker blocking at the DNS level, the same core idea as **[
 
 Generally considered to have a somewhat more modern web UI than Pi-hole, and ships with a few extras built in, per-client rules and schedules, and native support for encrypted upstream DNS (DNS-over-HTTPS/TLS) without extra configuration. In day-to-day use the two are close enough that the choice mostly comes down to interface preference, see **[[Network-wide Ad Blocking]]** for the fuller comparison.
 
+### Docker basics
+```yaml
+adguard-home:
+  image: adguard/adguardhome
+  ports:
+    - "53:53/tcp"
+    - "53:53/udp"
+    - "3000:3000"
+  volumes:
+    - adguard_work:/opt/adguardhome/work
+    - adguard_conf:/opt/adguardhome/conf
+  restart: unless-stopped
+```
+Port 3000 is only for the first-run setup wizard, once configured you pick a permanent port for the web UI.
+
 ### Related
 [[Network-wide Ad Blocking]] [[Pi-hole]] [[Homelab Networking Basics]]

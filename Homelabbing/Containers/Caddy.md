@@ -12,5 +12,18 @@ sonarr.home.example.com {
 
 A common middle ground between NPM's UI-driven simplicity and **[[Traefik]]**'s full container-label automation.
 
+### Docker basics
+```yaml
+caddy:
+  image: caddy:latest
+  ports:
+    - "80:80"
+    - "443:443"
+  volumes:
+    - ./Caddyfile:/etc/caddy/Caddyfile
+    - caddy_data:/data
+  restart: unless-stopped
+```
+
 ### Related
 [[Infrastructure and Management]] [[Reverse Proxy]] [[Nginx Proxy Manager]] [[Traefik]]

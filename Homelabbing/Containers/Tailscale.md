@@ -12,5 +12,20 @@ Tailscale's Personal plan counts *people*, not devices, up to 6 users, each with
 ### The tradeoff
 Key exchange and coordination go through Tailscale's own servers (the actual traffic, once connected, is still a direct encrypted WireGuard tunnel between your devices, not routed through Tailscale). For a fully self-hosted alternative to even that coordination layer, see **[[Netbird]]**.
 
+### Docker basics
+```yaml
+tailscale:
+  image: tailscale/tailscale
+  hostname: homelab
+  environment:
+    - TS_AUTHKEY=your-auth-key
+    - TS_STATE_DIR=/var/lib/tailscale
+  volumes:
+    - tailscale_state:/var/lib/tailscale
+  cap_add:
+    - NET_ADMIN
+  restart: unless-stopped
+```
+
 ### Related
 [[VPNs and Remote Access]] [[WireGuard]] [[Netbird]] [[Homelab Networking Basics]]

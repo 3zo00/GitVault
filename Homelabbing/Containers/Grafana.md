@@ -6,5 +6,16 @@ A dashboarding tool that turns raw metrics, most commonly from **[[Prometheus]]*
 
 Also supports alerting (a panel can trigger a notification when a metric crosses a threshold, disk nearly full, a service down), turning passive dashboards into an active early-warning system.
 
+### Docker basics
+```yaml
+grafana:
+  image: grafana/grafana
+  ports:
+    - "3000:3000"
+  volumes:
+    - grafana_data:/var/lib/grafana
+  restart: unless-stopped
+```
+
 ### Related
 [[Monitoring]] [[Prometheus]] [[Uptime Kuma]]

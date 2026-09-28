@@ -6,5 +6,16 @@ A simple, self-hosted uptime monitor: define a list of things to check (a URL, a
 
 Much lower setup effort than a full **[[Prometheus]]** + **[[Grafana]]** stack, the right starting point for "just tell me when something breaks" before reaching for deeper metrics and dashboards.
 
+### Docker basics
+```yaml
+uptime-kuma:
+  image: louislam/uptime-kuma
+  ports:
+    - "3001:3001"
+  volumes:
+    - uptime_kuma_data:/app/data
+  restart: unless-stopped
+```
+
 ### Related
 [[Monitoring]] [[Prometheus]] [[Grafana]]

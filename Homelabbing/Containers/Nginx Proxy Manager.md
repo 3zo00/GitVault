@@ -6,5 +6,20 @@ The most beginner-friendly **[[Reverse Proxy]]** option, a web UI over Nginx tha
 
 Good default choice for a first reverse proxy setup, the tradeoff versus **[[Caddy]]** or **[[Traefik]]** is that it's less automated, each new service means manually adding a proxy host through the UI rather than having it discovered automatically from container labels.
 
+### Docker basics
+```yaml
+nginx-proxy-manager:
+  image: jc21/nginx-proxy-manager:latest
+  ports:
+    - "80:80"
+    - "443:443"
+    - "81:81"
+  volumes:
+    - npm_data:/data
+    - npm_letsencrypt:/etc/letsencrypt
+  restart: unless-stopped
+```
+Port 81 is the admin UI, where you add proxy hosts and request certificates.
+
 ### Related
 [[Infrastructure and Management]] [[Reverse Proxy]] [[Caddy]] [[Traefik]]

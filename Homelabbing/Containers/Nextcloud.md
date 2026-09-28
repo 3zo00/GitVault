@@ -6,5 +6,16 @@ A self-hosted file sync-and-share platform, the closest thing to a self-hosted D
 
 Broader in scope than **[[Immich]]**, which focuses specifically on photos, Nextcloud's photo handling is one app among many rather than the whole point. Worth choosing Nextcloud over Immich specifically when general file sync, document collaboration, or calendar/contacts self-hosting matter as much as photo backup, or running both side by side when each does its own job better.
 
+### Docker basics
+```yaml
+nextcloud:
+  image: nextcloud
+  ports:
+    - "8080:80"
+  volumes:
+    - nextcloud_data:/var/www/html
+  restart: unless-stopped
+```
+
 ### Related
 [[Photos and Files]] [[Immich]] [[NAS]]

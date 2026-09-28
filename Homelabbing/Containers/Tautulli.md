@@ -6,5 +6,20 @@ A monitoring and statistics dashboard specifically for **[[Plex]]**: who's watch
 
 Purely Plex-specific, there isn't a direct equivalent bundled with Jellyfin, though Jellyfin exposes some of the same information through its own admin dashboard and plugins.
 
+### Docker basics
+```yaml
+tautulli:
+  image: lscr.io/linuxserver/tautulli
+  environment:
+    - PUID=1000
+    - PGID=1000
+    - TZ=Etc/UTC
+  ports:
+    - "8181:8181"
+  volumes:
+    - tautulli_config:/config
+  restart: unless-stopped
+```
+
 ### Related
 [[Plex]] [[Monitoring]] [[Media Management (Arr Stack)]]

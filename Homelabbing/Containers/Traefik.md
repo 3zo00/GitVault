@@ -11,5 +11,19 @@ labels:
 
 The most automated of the three common reverse proxy choices, and the most common pick for larger, container-heavy homelabs where manually registering every new service would get tedious. The tradeoff is a steeper initial learning curve than NPM's UI or Caddy's simple config file.
 
+### Docker basics
+```yaml
+traefik:
+  image: traefik:v3
+  command:
+    - "--providers.docker=true"
+    - "--entrypoints.web.address=:80"
+  ports:
+    - "80:80"
+  volumes:
+    - /var/run/docker.sock:/var/run/docker.sock:ro
+  restart: unless-stopped
+```
+
 ### Related
 [[Infrastructure and Management]] [[Reverse Proxy]] [[Docker Compose]] [[Nginx Proxy Manager]] [[Caddy]]

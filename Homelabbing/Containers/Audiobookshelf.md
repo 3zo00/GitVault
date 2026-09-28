@@ -6,5 +6,19 @@ A dedicated self-hosted server for audiobooks and podcasts, with a purpose-built
 
 A common pairing: **[[Readarr]]** or manual downloads to acquire files, Audiobookshelf to actually serve and play them.
 
+### Docker basics
+```yaml
+audiobookshelf:
+  image: advplyr/audiobookshelf
+  ports:
+    - "13378:80"
+  volumes:
+    - audiobookshelf_config:/config
+    - audiobookshelf_metadata:/metadata
+    - /nas/audiobooks:/audiobooks
+    - /nas/podcasts:/podcasts
+  restart: unless-stopped
+```
+
 ### Related
 [[Media Management (Arr Stack)]] [[Readarr]] [[Self-Hosted Service Stack]]

@@ -1,4 +1,4 @@
-#domain/homelab
+#domain/homelab #domain/hardware
 
 # Homelab Setup
 

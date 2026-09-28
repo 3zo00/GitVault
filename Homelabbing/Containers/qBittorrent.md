@@ -6,5 +6,23 @@ A free, open-source BitTorrent client, the most common download client wired int
 
 Often run behind a VPN container (policy-routed so only qBittorrent's traffic goes through the tunnel) when downloading torrents, worth deciding deliberately rather than skipping, depending on what's actually being downloaded and local regulations.
 
+### Docker basics
+```yaml
+qbittorrent:
+  image: lscr.io/linuxserver/qbittorrent
+  environment:
+    - PUID=1000
+    - PGID=1000
+    - TZ=Etc/UTC
+  ports:
+    - "8080:8080"
+    - "6881:6881"
+    - "6881:6881/udp"
+  volumes:
+    - qbittorrent_config:/config
+    - /nas/downloads:/downloads
+  restart: unless-stopped
+```
+
 ### Related
 [[Media Management (Arr Stack)]] [[SABnzbd]] [[Sonarr]] [[Radarr]]

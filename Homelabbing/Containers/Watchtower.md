@@ -7,5 +7,17 @@ Watches running **[[Docker]]** containers and automatically pulls newer images, 
 ### The tradeoff worth knowing
 Fully automatic updates mean a breaking change in an upstream image applies itself while you're not watching. Common mitigations: pin specific containers to exclude them from Watchtower's scope (labels control this), snapshot before update windows if running on **[[Proxmox]]**, and keep tested backups current regardless, see **[[Homelab Backups and Maintenance]]**.
 
+### Docker basics
+```yaml
+watchtower:
+  image: containrrr/watchtower
+  volumes:
+    - /var/run/docker.sock:/var/run/docker.sock
+  environment:
+    - WATCHTOWER_CLEANUP=true
+    - WATCHTOWER_SCHEDULE=0 0 4 * * *
+  restart: unless-stopped
+```
+
 ### Related
 [[Infrastructure and Management]] [[Docker]] [[Homelab Backups and Maintenance]]

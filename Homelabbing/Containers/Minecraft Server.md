@@ -6,5 +6,20 @@ A self-hosted Minecraft (Java or Bedrock edition) server, frequently one of the 
 
 Common Docker images (like `itzg/minecraft-server`) handle most of the setup through environment variables, version, server type (Vanilla, Paper, Forge for mods), memory limits, rather than manual server.properties editing.
 
+### Docker basics
+```yaml
+minecraft:
+  image: itzg/minecraft-server
+  environment:
+    - EULA=TRUE
+    - TYPE=PAPER
+    - MEMORY=4G
+  ports:
+    - "25565:25565"
+  volumes:
+    - minecraft_data:/data
+  restart: unless-stopped
+```
+
 ### Related
 [[Miscellaneous]] [[Homelab Backups and Maintenance]] [[Homelab Networking Basics]]

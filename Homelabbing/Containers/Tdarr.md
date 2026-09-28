@@ -6,5 +6,20 @@ Automated media transcoding across a whole library, useful for standardizing a m
 
 Supports distributed processing (multiple "node" workers, potentially across several machines) for large libraries, and hardware-accelerated encoding (Intel Quick Sync, NVENC) when the host supports it, which matters a lot for how long a full library re-encode actually takes.
 
+### Docker basics
+```yaml
+tdarr:
+  image: haveagitgat/tdarr
+  ports:
+    - "8265:8265"
+    - "8266:8266"
+  volumes:
+    - tdarr_server:/app/server
+    - tdarr_configs:/app/configs
+    - tdarr_logs:/app/logs
+    - /nas/media:/media
+  restart: unless-stopped
+```
+
 ### Related
 [[Media Management (Arr Stack)]] [[Self-Hosted Service Stack]] [[Proxmox]]
