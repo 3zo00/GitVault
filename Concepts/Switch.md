@@ -1,4 +1,4 @@
-#domain/networking
+#domain/hardware #domain/networking
 
 # Switch
 

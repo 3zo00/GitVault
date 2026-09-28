@@ -1,4 +1,4 @@
-#domain/networking
+#domain/networking #domain/hardware
 
 # Router
 
