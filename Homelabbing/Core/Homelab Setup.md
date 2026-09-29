@@ -2,7 +2,7 @@
 
 # Homelab Setup
 
-![[Homelab_Setup_Excalidraw]]
+![[03_Proxmox_Homelab]]
 
 My homelab is a sandbox: a place to run real infrastructure at home so I can learn, break things, and rebuild them. I'm not especially attracted to the hardware, but trying something new on production always ends badly, so I build myself a safe place to fail instead.
 
@@ -28,6 +28,11 @@ Or maybe stay at Stage 1, just running a cheap machine because all you want is a
 
 ### Why it's worth it
 Beyond the skills (Linux, Docker, networking, virtualization), a homelab teaches troubleshooting under real constraints in a way tutorials can't: something breaks, you don't know why, and you have to actually figure it out. It also tends to pay for itself in avoided subscriptions as long as you don't all in on a professional-grade brand new server and 100 TB storage (media server instead of streaming fees, self-hosted password manager, ad blocking, etc.), though that's a side benefit, not really the point.
+
+### Three different homelab for three different levels:
+[[01_First_Homelab_No_Switch]]
+[[02_Beginner_Switch_Homelab]]
+[[03_Proxmox_Homelab]]
 
 ### Related  
 [[Homelab]] [[Homelab Hardware Tiers]] [[Homelab Physical Setup]] [[Proxmox]] [[Homelab Networking Basics]] [[Self-Hosted Service Stack]] [[Homelab Backups and Maintenance]] [[Homelab Common Mistakes]] [[Docker]] [[Docker Compose]] [[Container]] [[LXC]] [[Router]] [[Switch]] [[Firewall]] [[NAS]] [[Hypervisor]]
