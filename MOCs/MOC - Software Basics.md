@@ -20,7 +20,7 @@ Hub for how data is represented and encoded under the hood, plus first steps in 
 [[04. Introduction to strings]]
 [[05. Workshop Employee profile generator]]
 [[06. Numbers and mathematical operations]]
-[[07. Workshop Bill spliter]]
+[[07. Workshop Bill splitter]]
 [[08. Booleans and conditionals]]
 [[09. Workshop Movie ticket booking calculator]]
 [[10. Workshop Travel weather planner]]

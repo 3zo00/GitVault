@@ -6,7 +6,7 @@
 https://www.stationx.net/nmap-cheat-sheet/
 
 
-Comprehensive Nmap cheathsset: scan types, discovery options, firewall evasion and version detection.
+Comprehensive Nmap cheatsheet: scan types, discovery options, firewall evasion and version detection.
 
 
 ## Related
