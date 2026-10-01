@@ -112,3 +112,24 @@
     #0e0c14 100%
   ) !important;
 }
+
+@media (max-width: 700px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .dashboard-card {
+    padding: 14px;
+    max-height: none;
+  }
+
+  .gitvault-title {
+    font-size: 2em;
+    margin-bottom: 18px;
+  }
+
+  .dashboard-wrap {
+    margin-top: 8px;
+  }
+}
