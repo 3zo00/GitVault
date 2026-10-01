@@ -1,0 +1,235 @@
+{
+  "main": {
+    "id": "7cecf9daf6f65639",
+    "type": "split",
+    "children": [
+      {
+        "id": "8d5ac12e463b6d2f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a8f0625d2e3d3913",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "README"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "222453b6d6c2b02f",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "b147a73173d01868",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {
+            "sortOrder": "alphabetical",
+            "autoReveal": false,
+            "showSearch": false,
+            "searchQuery": ""
+          },
+          "icon": "lucide-folder-closed",
+          "title": "Files"
+        }
+      },
+      {
+        "id": "30aad9e99aeff087",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
+          },
+          "icon": "lucide-search",
+          "title": "Search"
+        }
+      },
+      {
+        "id": "be9668566f64f99e",
+        "type": "leaf",
+        "state": {
+          "type": "tag",
+          "state": {
+            "sortOrder": "frequency",
+            "useHierarchy": true,
+            "showSearch": false,
+            "searchQuery": ""
+          },
+          "icon": "lucide-tags",
+          "title": "Tags"
+        }
+      },
+      {
+        "id": "ac67672d20844350",
+        "type": "leaf",
+        "state": {
+          "type": "all-properties",
+          "state": {
+            "sortOrder": "frequency",
+            "showSearch": false,
+            "searchQuery": ""
+          },
+          "icon": "lucide-archive",
+          "title": "All properties"
+        }
+      },
+      {
+        "id": "8ba7b0d35f6326ef",
+        "type": "leaf",
+        "state": {
+          "type": "bookmarks",
+          "state": {
+            "showSearch": false,
+            "searchQuery": ""
+          },
+          "icon": "lucide-bookmark",
+          "title": "Bookmarks"
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "right": {
+    "id": "b4923ba7564e46e2",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "c01b9ea0b8bb6627",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "file": "README.md",
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": true
+          },
+          "icon": "links-coming-in",
+          "title": "Backlinks"
+        }
+      },
+      {
+        "id": "502ed2d65d3cfa2b",
+        "type": "leaf",
+        "state": {
+          "type": "outgoing-link",
+          "state": {
+            "file": "README.md",
+            "linksCollapsed": false,
+            "unlinkedCollapsed": true
+          },
+          "icon": "links-going-out",
+          "title": "Outgoing links"
+        }
+      },
+      {
+        "id": "079e521aa973e39b",
+        "type": "leaf",
+        "state": {
+          "type": "outline",
+          "state": {
+            "file": "README.md",
+            "followCursor": false,
+            "showSearch": false,
+            "searchQuery": ""
+          },
+          "icon": "lucide-list",
+          "title": "Outline"
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "a8f0625d2e3d3913",
+  "lastOpenFiles": [
+    "Screenshots/dashboard_1.1.png",
+    "Screenshots/Obsidian_Graph.png",
+    "Screenshots/graph_groups.png",
+    "Screenshots/restricted_mode.png",
+    "Screenshots/settings.png",
+    "Screenshots",
+    "Concepts/Bit.md",
+    "Concepts/SFTP.md",
+    "Concepts/Cryptography.md",
+    "Concepts/Virus.md",
+    "Concepts/Boolean Operators (Python).md",
+    "Concepts/Cron.md",
+    "Concepts/Encapsulation.md",
+    "Concepts/Tuple (Python).md",
+    "Concepts/Scope (Python).md",
+    "Concepts/Organizational Unit.md",
+    "Concepts/Python3.md",
+    "Concepts/Pi-hole.md",
+    "Concepts/WHOIS.md",
+    "Concepts/bash.md",
+    "Concepts/Vim.md",
+    "Concepts/Cloud.md",
+    "Concepts/SQL.md",
+    "Concepts/function (Python).md",
+    "Concepts/File Descriptor.md",
+    "Concepts/sed.md",
+    "Concepts/EFS.md",
+    "Concepts/sudo.md",
+    "Concepts/UAC User Account Control.md",
+    "Concepts/Packet.md",
+    "Concepts/Python.md",
+    "Concepts",
+    "MOCs",
+    "Resources/Websites/Linux",
+    "Resources/Websites/Programming",
+    "Resources/Websites/Self-Hosting",
+    "Resources/Websites/Ethical Hacking - Pentesting",
+    "Resources/Websites/Networking",
+    "Resources/Websites/Software",
+    "Resources/Books/Linux",
+    "Excalidraw/graphicons/proxmox.png",
+    "Excalidraw/graphicons/urgreen_nas.png",
+    "Excalidraw/graphicons/radarr.png",
+    "Excalidraw/graphicons/camera.png",
+    "Excalidraw/graphicons/pi-hole.png",
+    "Excalidraw/graphicons/tailscale.png"
+  ]
+}

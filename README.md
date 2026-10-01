@@ -1,5 +1,5 @@
 
-# GitOwl58 Obsidian Vault Complete CyberSecurity Beginners.
+# Obsidian Vault Complete CyberSecurity Beginners.
 
 <table>
   <tr>
